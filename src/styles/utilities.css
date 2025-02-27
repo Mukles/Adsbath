@@ -1,0 +1,7 @@
+@utility bg-gradient {
+  @apply bg-linear-to-b from-[rgba(249,249,249,1)] from-[0.53%] to-white to-[83.28%];
+}
+
+@utility border-shadow {
+  @apply shadow-[4px_6px_0] shadow-black border border-border;
+}

@@ -1,0 +1,62 @@
+/* section style */
+.section {
+  @apply py-14;
+}
+
+.section-lg {
+  @apply py-24;
+}
+
+/* container */
+.container {
+  @apply mx-auto xl:!max-w-[1320px] px-4;
+}
+
+.check-mark {
+  @apply relative after:border-shadow after:rounded after:absolute after:top-6 after:left-0 after:size-6 before:w-5 before:h-6 before:inline-block after:shadow-[4px_4px_0] before:top-5 before:z-50 before:left-0.5 before:absolute before:bg-[url('/icons/check.svg')] before:bg-no-repeat before:bg-center before:bg-contain;
+}
+
+/* accordion */
+.accordion {
+  @apply mb-6 px-8 overflow-hidden rounded-lg border-shadow;
+}
+
+.accordion-header {
+  @apply flex w-full cursor-pointer items-center justify-between py-5 text-lg text-text-dark;
+}
+
+.accordion-icon {
+  @apply h-[.8em] w-[.8em] rotate-[-90deg] transition-transform duration-200;
+}
+
+.accordion-content {
+  @apply max-h-0 overflow-hidden py-0 text-text-dark leading-8 pr-12 text-xl;
+}
+.accordion.active .accordion-header {
+  @apply border-b border-border/40;
+}
+
+.accordion.active .accordion-icon {
+  @apply rotate-0;
+}
+
+.accordion.active .accordion-content {
+  @apply max-h-screen;
+}
+
+/* line */
+.line {
+  @apply relative;
+}
+
+.line::after {
+  @apply content-[''] absolute left-0 -bottom-[29%] translate-y-1/2 w-full h-7;
+}
+
+.line-primray::after {
+  @apply bg-[url('/icons/line.svg')] bg-no-repeat bg-center bg-contain;
+}
+
+.line-secondary::after {
+  @apply bg-[url('/icons/line-2.svg')] bg-no-repeat bg-center bg-contain;
+}
