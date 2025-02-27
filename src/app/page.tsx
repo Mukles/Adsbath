@@ -1,4 +1,5 @@
 import { AdsMarketingPitch } from "@/components/ads-marketing-section";
+import { DayGrowth } from "@/components/day-growth";
 import { EngageGrow } from "@/components/engage-grow";
 import { Faq } from "@/components/faq";
 import { GrowMyAds } from "@/components/grow-my-ads";
@@ -88,6 +89,7 @@ export default function ServicePage() {
 
       <MarketingTab />
       <GrowthSprints />
+      <DayGrowth />
       <SectionFooter title="Here’s what you get" />
       <EngageGrow />
       <SectionFooter title="Dominate the market" />
