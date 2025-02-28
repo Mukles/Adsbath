@@ -1,7 +1,7 @@
 {
   "site": {
-    "title": "Nextplate",
-    "base_url": "https://nextplate.netlify.app",
+    "title": "adsbath",
+    "base_url": "https://adsbath.vercel.app",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -9,7 +9,7 @@
     "logo_darkmode": "/images/logo-darkmode.png",
     "logo_width": "150",
     "logo_height": "27",
-    "logo_text": "Nextplate"
+    "logo_text": "adsbath"
   },
 
   "settings": {
@@ -24,24 +24,18 @@
 
   "params": {
     "contact_form_action": "#",
-    "copyright": "Designed And Developed by [Zeon Studio](https://zeon.studio)"
+    "copyright": "Designed And Developed by [mukles](https://mukles.vercel.app)"
   },
 
   "navigation_button": {
     "enable": true,
     "label": "Get Started",
-    "link": "https://github.com/zeon-studio/nextplate"
-  },
-
-  "disqus": {
-    "enable": true,
-    "shortname": "themefisher-template",
-    "settings": {}
+    "link": "https://github.com/mukles/adsbath"
   },
 
   "metadata": {
-    "meta_author": "Themefisher",
+    "meta_author": "mukles",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Next Boilerplate"
+    "meta_description": "adsbath"
   }
 }
