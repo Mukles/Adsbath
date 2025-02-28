@@ -11,6 +11,7 @@ import { Feature } from "@/layouts/components/feature";
 import { SectionFooter } from "@/layouts/components/section-footer";
 import { HeroSection } from "@/layouts/sections/hero-section";
 import { ServiceSections } from "@/layouts/sections/service-section";
+import Link from "next/link";
 import { MarketingTab } from "../layouts/components/marketing-tab";
 
 export default function ServicePage() {
@@ -26,7 +27,7 @@ export default function ServicePage() {
         title={
           <p>
             Are you one of the{" "}
-            <span className="bg-primary">90% of Google advertisers</span> who
+            <span className="bg-primary/50">90% of Google advertisers</span> who
             experiences these problems
           </p>
         }
@@ -53,7 +54,22 @@ export default function ServicePage() {
             every time you try to spend, your ROI drops off and costs blow out.
           </p>,
         ]}
-      />
+      >
+        <p>
+          Grow My Ads has your back and will help you get the best possible
+          results from your ad spend by re-evaluating your strategy every 3
+          months with our 90-day Growth Sprints.
+        </p>
+        <p>
+          Over the past 5 years, we’ve helped 230+ businesses dramatically
+          increase their conversions and ROI from their Google ads campaigns by
+          revamping their paid media and marketing strategy.
+        </p>
+
+        <button className="btn btn-primary btn-lg border-shadow mt-12">
+          Get Your FREE Analysis
+        </button>
+      </Feature>
 
       <SectionFooter title="Proven Track Record" />
 
@@ -85,7 +101,26 @@ export default function ServicePage() {
             ask.
           </p>,
         ]}
-      />
+      >
+        <p>Why can we deliver bigger, better results than anyone else?</p>
+        <p>
+          Grow My Ads takes 100% responsibility of your Google Ads account, so
+          you know exactly how we’re boosting your results. By properly
+          restructuring your account, transforming your Google Ads
+        </p>
+        <p>
+          campaigns, and effectively leveraging{" "}
+          <Link className="underline underline-offset-4" href={""}>
+            Google remarketing
+          </Link>{" "}
+          ads , you can expect a dramatic increase in ad campaign performance in
+          the first 30-90 days.
+        </p>
+
+        <button className="btn btn-primary btn-lg border-shadow mt-9">
+          Get Your FREE Analysis
+        </button>
+      </Feature>
 
       <MarketingTab />
       <GrowthSprints />

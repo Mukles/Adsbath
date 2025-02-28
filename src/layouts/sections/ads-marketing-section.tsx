@@ -24,15 +24,16 @@ export function AdsMarketingPitch() {
           </p>
           <h2 className="mb-7">
             Gone are the days of signing a
-            <span className="bg-primary">log contract</span> with a Google adds
-            agency or freelancer and hopping and hoping they'll deliver result.
+            <span className="bg-primary/50">log contract</span> with a Google
+            adds agency or freelancer and hopping and hoping they'll deliver
+            result.
           </h2>
 
           <h6 className="text-xl font-normal  font-secondary text-text-dark text-center">
             Grow My Ads <span className="line line-secondary">promises</span>:
           </h6>
           <div>
-            <div className="grid grid-cols-3 mt-8">
+            <div className="grid md:grid-cols-3 max-md:gap-y-10 mt-8">
               <div className="space-y-3">
                 <Image
                   className="mx-auto size-[50px]"

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const HeroSection = () => {
   return (
-    <section className="relative pb-0 section-lg lg:py-0">
+    <section className="relative pt-10">
       <Image
         src={"/images/bg-image.png"}
         alt="bg-image"
@@ -35,7 +35,7 @@ export const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primary py-4 w-full">
+        <div className="bg-primary mt-10 py-4 w-full">
           <div className="container">
             <div className="flex items-center justify-center gap-5">
               <p className="text-dark font-secondary text-base md:text-xl font-normal text-center">

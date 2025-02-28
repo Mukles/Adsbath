@@ -47,7 +47,10 @@ export function EngageGrow() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {items.map((item, index) => (
-            <div className="text-center p-4" key={index}>
+            <div
+              className="text-center p-4 max-sm:max-w-sm max-sm:mx-auto"
+              key={index}
+            >
               <Image
                 className="mx-auto mb-3"
                 src={item.src}
@@ -94,6 +97,7 @@ export function EngageGrow() {
                 width={332}
                 height={310}
                 alt="image"
+                className="mx-auto"
               />
             </div>
           </div>

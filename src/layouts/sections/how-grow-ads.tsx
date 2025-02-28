@@ -1,5 +1,23 @@
 import Image from "next/image";
 
+const items = [
+  {
+    id: 1,
+    title: "Intro Call",
+    desc: "During this initial free consultation call, you give us some context on your business, your goals, the history of your account, what you think the potential is for your business with Google Ads and KPIs you want to hit. This informs how we approach our analysis and allows us to make specific recommendations for improvements.",
+  },
+  {
+    id: 2,
+    title: "Google Ads Analysis Call",
+    desc: "We conduct a detailed review of your account. This includes strategy, conversion tracking, search, shopping, video and display advertising campaigns. We see where you are doing well and where the account is off track. Specific recommendations for improvements will be shared with you all at no cost.",
+  },
+  {
+    id: 3,
+    title: "Offer",
+    desc: "If we feel we can make a significant impact on the account performance, we’ll walk you through what results to expect, how long they will take, and give you a specific fee for our Google Ads management services. And if you’re onboard, we can get started!",
+  },
+];
+
 export function HowGrowAds() {
   return (
     <section className="section-lg">
@@ -17,22 +35,15 @@ export function HowGrowAds() {
         </div>
 
         <div className="grid md:grid-cols-2 max-lg:place-items-center max-lg:items-center lg:grid-cols-3 gap-6">
-          {[...Array(3)].map((_, index) => (
+          {items.map((item, index) => (
             <div
               className="border-shadow py-12 px-12 rounded-lg border-border/50"
               key={index}
             >
               <h4 className="pt-2 text-2xl font-bold text-text-dark mb-9">
-                1. Intro Call
+                {item.title}{" "}
               </h4>
-              <p className="text-xl text-text-dark">
-                During this initial free consultation call, you give us some
-                context on your business, your goals, the history of your
-                account, what you think the potential is for your business with
-                Google Ads and KPIs you want to hit. This informs how we
-                approach our analysis and allows us to make specific
-                recommendations for improvements.
-              </p>
+              <p className="text-xl text-text-dark">{item.desc}</p>
             </div>
           ))}
         </div>

@@ -6,11 +6,13 @@ export function Feature({
   description,
   features,
   image = "/images/astronaut-clock.svg",
+  children,
 }: {
   title: ReactNode;
   features: ReactNode[];
   image?: string;
   description?: string;
+  children: ReactNode;
 }) {
   return (
     <section className="section-lg">
@@ -48,21 +50,8 @@ export function Feature({
               </ul>
             </div>
 
-            <div className="lg:mt-10 lg:col-span-2 text-center max-w-[750px] mx-auto space-y-4">
-              <p>
-                Grow My Ads has your back and will help you get the best
-                possible results from your ad spend by re-evaluating your
-                strategy every 3 months with our 90-day Growth Sprints.
-              </p>
-              <p>
-                Over the past 5 years, we’ve helped 230+ businesses dramatically
-                increase their conversions and ROI from their Google ads
-                campaigns by revamping their paid media and marketing strategy.
-              </p>
-
-              <button className="btn btn-primary btn-lg border-shadow mt-12">
-                Get Your FREE Analysis
-              </button>
+            <div className="lg:mt-16 lg:col-span-2 text-center max-w-[750px] mx-auto space-y-4">
+              {children}
             </div>
           </div>
         </div>
